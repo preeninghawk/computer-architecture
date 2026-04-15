@@ -1,0 +1,61 @@
+
+1d x9 64(x22)
+
+
+start from x22(address)
+move 64(offset)
+read A[bytes you need to read]
+
+f=(g+h)-(i+j)
+x19 x20 x21 x22 x23
+
+ADD x5 x20 x21
+ADD x6 x22 x23
+SUB x7 x11 x12
+
+
+swap:
+	ld	a4,0(a0)
+	ld	a5,0(a1)
+	sd	a5,0(a0)
+	sd	a4,0(a1)
+	ret
+
+
+rs2=register source?? 2
+rs1
+rd=register directory?
+
+
+add instruction
+add x9 x20 x21
+
+
+sd instruction
+
+sd x9, 240(x10)
+
+
+imm[11:5] rs2 rs1 funct3 imm[4:0] opcode
+7 9 10 011 16 35
+
+
+bne x22, x23, Else
+add x19, x20, x21
+beq x0, x0, Exit //unconditional
+
+Else: sub x19, x20, x21
+Exit: 
+
+
+< x2
+<< x4
+<<< x8
+> /2
+>> /4
+
+x10=&save[i]
+x9=save[i]
+
+
+

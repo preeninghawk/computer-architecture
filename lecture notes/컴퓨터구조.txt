@@ -1,0 +1,12 @@
+Q1. Who is responsible for deciding the amount of the stack?
+Q2. What if you are allocating memory space at runtime(e.g. malloc)
+
+
+Call-by function
+Call-by reference
+
+void swap(int x,y){
+	int temp=x;
+	x=y;
+	y=temp;
+}
